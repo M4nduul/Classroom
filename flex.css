@@ -1,24 +1,40 @@
 .item {
-  background-color: dodgerblue;
+  background-color: dimgrey;
   text-align: center;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50px 100px 100px 50px;
-  grid-gap: 1px;
+  grid-template-columns: 160px 80px 100px 80px;
+  grid-template-rows: 80px 200px;
+  grid-gap: 1em;
 }
 
-.item1,
-.item6 {
+.sub-container {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(2, 80px);
+  grid-gap: 1em;
+}
+
+.inner {
+  background-color: lightgrey;
+}
+.none {
+  background-color: white;
+}
+.a {
+  grid-column: span 2;
+}
+
+.d {
   grid-column: span 3;
 }
 
-.item2 {
+.e {
   grid-row: span 2;
 }
 
-.item3 {
+.f {
   grid-column: span 2;
 }
