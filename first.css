@@ -1,0 +1,96 @@
+.item {
+  background-color: royalblue;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  grid-template-rows: 50px repeat(3, 150px);
+  grid-gap: 1em;
+}
+
+header {
+  grid-column: span 3;
+}
+
+.title2 {
+  grid-column: 1 / 2;
+  grid-row: span 2;
+}
+
+.title3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / span 3;
+}
+
+.title4 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-template-rows: 50px repeat(5, 100px);
+    grid-gap: 1em;
+  }
+
+  header {
+    grid-column: span 2;
+  }
+
+  .title2 {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+  }
+
+  .title3 {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+  }
+
+  .title4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .title5 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .title6 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: minmax(400px, 1fr);
+    grid-template-rows: 50px repeat(5, 100px);
+    grid-gap: 1em;
+  }
+
+  header {
+    grid-column: 1;
+  }
+
+  .title1,
+  .title2,
+  .title3,
+  .title4,
+  .title5,
+  .title6 {
+    grid-column: 1 / 2;
+    /* grid-row: span 2; */
+  }
+}
