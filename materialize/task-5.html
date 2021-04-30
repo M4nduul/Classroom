@@ -17,6 +17,12 @@
       </div>
     </nav>
     <br>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
     <nav>
       <div class="nav-wrapper blue darken-3">
         <a href="#" class="brand-logo" ><img  src="./logo.svg" alt=""></a>
@@ -43,6 +49,11 @@
     </nav>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, options);
+      });
+    </script>
   </body>
 </html>
