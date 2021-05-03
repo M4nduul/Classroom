@@ -77,21 +77,12 @@
                 <label>Optgroups</label>
               </div>
             
-              <div class="input-field col s12 m6">
+              <div class="input-field col s12 m12">
                 <select class="icons">
                   <option value="" disabled selected>Choose your option</option>
                   <option value="" data-icon="images/sample-1.jpg">example 1</option>
                   <option value="" data-icon="images/office.jpg">example 2</option>
                   <option value="" data-icon="images/yuna.jpg">example 3</option>
-                </select>
-                <label>Images in select</label>
-              </div>
-              <div class="input-field col s12 m6">
-                <select class="icons">
-                  <option value="" disabled selected>Choose your option</option>
-                  <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
-                  <option value="" data-icon="images/office.jpg" class="left">example 2</option>
-                  <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
                 </select>
                 <label>Images in select</label>
               </div>
@@ -103,7 +94,32 @@
                 <option value="2">Option 2</option>
                 <option value="3">Option 3</option>
               </select>
-            
+              <br>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>HTML</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" checked="checked" />
+                  <span>CSS</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>JavaScript</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" disabled="disabled" />
+                  <span>PHP</span>
+                </label>
+              </p>
+              
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         
@@ -111,7 +127,7 @@
             
             document.addEventListener('DOMContentLoaded', function() {
                 var elems = document.querySelectorAll('select');
-                var instances = M.FormSelect.init(elems, options);
+                var instances = M.FormSelect.init(elems);
             });
     
         </script>
