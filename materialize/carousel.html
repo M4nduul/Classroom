@@ -15,8 +15,44 @@
                 <a class="carousel-item" href="#three!"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsneakernews.com%2Fwp-content%2Fuploads%2F2020%2F10%2Fjordan-1-black-mocha-555088-105-2.jpg&f=1&nofb=1"></a>
                 <a class="carousel-item" href="#four!"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.zySYTA6Xo_Us1l0gUExLOAHaFM%26pid%3DApi&f=1"></a>
                 <a class="carousel-item" href="#five!"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.WL2xwmkJoQBED6jejHglFAHaFN%26pid%3DApi&f=1"></a>
-              </div>
+            </div>
                   
+            <div class="carousel withColor carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.freshnessmag.com%2F.image%2Ft_share%2FMTc0NDc2MjQ3MTk4NzM4MDU0%2Fair-jordan-1-satin-red-2020-1.jpg&f=1&nofb=1"></a>
+                <a class="carousel-item" href="#two!"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.highsnobiety.com%2Fthumbor%2FLHWN1HQ1P9ThKmFZ6bYb7ifIN7Q%3D%2F1600x1067%2Fstatic.highsnobiety.com%2Fwp-content%2Fuploads%2F2019%2F04%2F22094815%2Fair-jordan-1-retro-high-og-obsidian-release-date-price-02.jpg&f=1&nofb=1"></a>
+                <a class="carousel-item" href="#three!"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsneakernews.com%2Fwp-content%2Fuploads%2F2020%2F10%2Fjordan-1-black-mocha-555088-105-2.jpg&f=1&nofb=1"></a>
+                <a class="carousel-item" href="#four!"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.zySYTA6Xo_Us1l0gUExLOAHaFM%26pid%3DApi&f=1"></a>
+                <a class="carousel-item" href="#five!"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.WL2xwmkJoQBED6jejHglFAHaFN%26pid%3DApi&f=1"></a>
+            </div>
+
+            <br>
+            <br>
+                    
+            <div class="carousel withColor carousel-slider center">
+                <div class="carousel-fixed-item center">
+                  <a class="btn waves-effect white-text black">button</a>
+                </div>
+                <div class="carousel-item red white-text" href="#one!">
+                  <h2>First Panel</h2>
+                  <p class="white-text">This is your first panel</p>
+                </div>
+                <div class="carousel-item amber white-text" href="#two!">
+                  <h2>Second Panel</h2>
+                  <p class="white-text">This is your second panel</p>
+                </div>
+                <div class="carousel-item green white-text" href="#three!">
+                  <h2>Third Panel</h2>
+                  <p class="white-text">This is your third panel</p>
+                </div>
+                <div class="carousel-item blue white-text" href="#four!">
+                  <h2>Fourth Panel</h2>
+                  <p class="white-text">This is your fourth panel</p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            
         </div>
         
         
@@ -27,6 +63,11 @@
              document.addEventListener('DOMContentLoaded', function() {
                 var elems = document.querySelectorAll('.carousel');
                 var instances = M.Carousel.init(elems);
+
+                var ins = M.Carousel.init(document.querySelectorAll('.withColor'), {
+                    fullWidth: true,
+                    indicators: true
+                });
             });
 
         </script>
