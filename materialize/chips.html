@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="chip">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2F-MlnvEdpKY2w%2FAAAAAAAAAAI%2FAAAAAAAAAAA%2FtOyTWDyUvgQ%2Fs900-c-k-no-mo-rj-c0xffffff%2Fphoto.jpg&f=1&nofb=1" alt="Contact Person">
+                Avatar
+                <i class="close material-icons">close</i>
+            </div>
+            <div class="chip">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2F-MlnvEdpKY2w%2FAAAAAAAAAAI%2FAAAAAAAAAAA%2FtOyTWDyUvgQ%2Fs900-c-k-no-mo-rj-c0xffffff%2Fphoto.jpg&f=1&nofb=1" alt="Contact Person">
+                Avatar
+                <i class="close material-icons">close</i>
+            </div>
+            <div class="chip">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2F-MlnvEdpKY2w%2FAAAAAAAAAAI%2FAAAAAAAAAAA%2FtOyTWDyUvgQ%2Fs900-c-k-no-mo-rj-c0xffffff%2Fphoto.jpg&f=1&nofb=1" alt="Contact Person">
+                Avatar
+                <!-- <i class="close material-icons">close</i> -->
+            </div>
+            <div class="chip">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2F-MlnvEdpKY2w%2FAAAAAAAAAAI%2FAAAAAAAAAAA%2FtOyTWDyUvgQ%2Fs900-c-k-no-mo-rj-c0xffffff%2Fphoto.jpg&f=1&nofb=1" alt="Contact Person">
+                Avatar
+                <!-- <i class="close material-icons">close</i> -->
+            </div>
+
+            <div placeholder="Enter a tag" class="chips chips-placeholder chips-autocomplete"></div>
+              
+            <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+                        
+            
+            
+        </div>
+            
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.chips');
+                var instances = M.Chips.init(elems, {
+                    'placeholder' : 'Enter a tag'
+                });
+                
+            });
+        </script>
+
+    </body>
+</html>
