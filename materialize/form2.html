@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="container">
+
+
+            <div class="switch">
+                <label>
+                    Disable
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    Enable
+                </label>
+            </div>
+
+            <form action="#">
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>Upload file</span>
+                        <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                    </div>
+                </div>
+            </form>
+
+            <form action="#">
+                <p class="range-field">
+                    <input type="range" id="test5" min="0" max="100" />
+                </p>
+            </form>
+            
+            <input placeholder='Choose a date' type="text" class="datepicker">
+            <input type="text" class="timepicker">
+            <label for="">Choose a time</label>
+            
+            <input id="post" type="text" class="validate">
+            <label for="post">Post</label>
+
+            <br>
+            <br>
+            <a class="waves-effect waves-light btn">submit</a>
+
+        </div>
+        
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script>
+             document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.datepicker');
+                var instances = M.Datepicker.init(elems);
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.timepicker');
+                var instances = M.Timepicker.init(elems);
+            });
+            
+        </script>
+
+    </body>
+</html>
